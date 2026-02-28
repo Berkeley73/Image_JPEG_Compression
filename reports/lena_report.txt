@@ -1,0 +1,23 @@
+1. GİRİŞ (ORİJİNAL) BİLGİLERİ
+ - Orijinal Piksel Verisi (Sıkıştırılmamış): 2,097,152 bit
+ - Orijinal Dosya Boyutu: 249,438 Bayt
+ - Toplam 8x8 Blok Sayısı: 4,096 adet
+
+2. KUANTİZASYON SONRASI BİT DEĞİŞİMİ (Kayıplı Sıkıştırma)
+ Bu aşamada kayıp yaşanır ve verinin büyük kısmı sıfırlanır.
+ - Toplam Katsayı Sayısı (Giriş): 262,144 adet
+ - **Sıfır Olmayan Katsayı Sayısı (Aktif Veri): 51,075 adet**
+ - Aktif Veri Oranı: %19.48
+
+3. RLE VE DC FARK KODLAMA SONRASI
+ Sıfır koşuları kısaltılır ve veriler Huffman için sembol çiftlerine dönüştürülür.
+ - Toplam DC/AC Sembol Çifti Sayısı (Huffman Girişi): 60,522 adet
+
+4. HUFFMAN KODLAMA SONRASI (Entropi Kodlama)
+ Değişken uzunluklu kodlar kullanılarak semboller bit akışına çevrilir.
+ - **GERÇEK ÇIKTI BİT MİKTARI (Sıkıştırılmış): 190,211 bit**
+ - **GERÇEK Sıkıştırma Oranı (Ratio): 11.03:1**
+
+5. KALİTE METRİKLERİ
+ - MSE (Ortalama Karesel Hata): 5.77
+ - PSNR (Tepe Sinyal Gürültü Oranı): 40.52 dB
